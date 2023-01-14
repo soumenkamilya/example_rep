@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: white;
+    background: black;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Serif', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#taxi {
+    float: left;
+    font-size: 280%;
+    margin-left: 40px;
+    margin: 2rem;
+    color: yellow;
+}
+
+/*Game area*/
+
+#tour{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+#check {
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+
+#check-dublin {
+    display: flex;
+    background-color: white;
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+#thankyou {
+    display: none;
+    background-color: black;
+    height: 60vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+
+.question {
+    font-family: 'Roboto Serif', sans-serif;
+    text-transform: none;
+    text-align: center;
+    font-style: oblique;
+    color: chartreuse;
+
+}
+
+img{
+    height:500px;
+    width: 500px;
+}
+
+.name{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.city{
+    width: 50%;
+    max-height: 60vh;
+}
+
+.guess-option {
+    background-color: #00B8E6;
+    color: white;
+    border: double;
+    padding: 5px;
+    font-size: 20px;
+    display: block;
+    margin: 20px;
+    margin-bottom: 5px;
+    min-width: 300px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.guess-option:hover{
+    background-color: hsl(72, 95%, 49%);
+
+}
+
+.restart {
+    background-color: #00B8E6;
+    color: white;
+    border: double;
+    padding: 5px;
+    font-size: 20px;
+    display: block;
+    margin: 20px;
+    margin-bottom: 5px;
+    min-width: 300px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.restart:hover{
+    background-color: hsl(72, 95%, 49%);
+
+}
+
+.results {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+#marked {
+    color: green;
+    font-weight: bold;
+}
+
+#un-marked {
+    color: red;
+    font-weight: bold;
+}
+
+.answered {
+    display: inline-block;
+    padding: 40px;
+}
+
+hr{
+    border-top: 1px solid hsl(61, 95%, 49%);
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* Footer section */
+
+footer {
+    height: 110px;
+    font-size: 150%;
+}
+
+.taxiNetwork {
+    text-align: center;
+}
+
+footer h3 {
+    text-align: center;
+    font-family: 'Roboto Serif', sans-serif;
+    margin: 50px auto;
+    margin: 1rem;
+}
+
+.taxiNetwork a {
+    font-size: 150%;
+    padding: 5%;
+    color: yellow;
+    margin: 40px auto;
+}
+
+.taxiNetwork a:hover {
+    font-size: 150%;
+    padding: 5%;
+    color: white;
+    margin: 40px auto;
+}
+
+/*Media queries*/
+
+/*For larger to medium screen size 1200px*/
+@media screen and (max-width: 1200px) {
+
+    #check-dublin {
+        display: flex;
+        background-color: white;
+        height: 60vh;
+        width: 60vw;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #thankyou {
+        display: none;
+        background-color: black;
+        height: 60vh;
+        width: 60vw;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    }    
+    
+    .guess-option {
+        background-color: #00B8E6;
+        color: white;
+        border: double;
+        padding: 5px;
+        font-size: 20px;
+        display: block;
+        margin: 20px;
+        margin-bottom: 5px;
+        min-width: 300px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .restart {
+        background-color: #00B8E6;
+        color: white;
+        border: double;
+        padding: 5px;
+        font-size: 20px;
+        display: block;
+        margin: 20px;
+        margin-bottom: 5px;
+        min-width: 300px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+}
+
+/*for medium screen size from 950px wide and down*/
+
+@media screen and (max-width: 950px) {
+
+    #check-dublin {
+        display: flex;
+        background-color: white;
+        height: 60vh;
+        width: 60vw;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    #thankyou {
+        display: none;
+        background-color: black;
+        height: 60vh;
+        width: 60vw;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    }    
+    
+    .guess-option {
+            background-color: #00B8E6;
+            color: white;
+            border: double;
+            padding: 15px;
+            cursor: pointer;
+            
+        }
+    
+    .restart {
+            background-color: #00B8E6;
+            color: white;
+            border: double;
+            padding: 15px;
+            cursor: pointer;
+            
+        }    
+
+}
+   
+
+/* media for screen max 600px */
+@media screen and (max-width: 600px){
+
+    #check-dublin {
+       display: flex;
+       background-color: white;
+       height: auto;
+       width: auto;
+       margin: auto;
+       margin-top: 60px;
+       margin-bottom: 50px;
+       border-radius: 10px;
+       padding: 40px;
+   }
+
+    #thankyou {
+       display: none;
+       background-color: black;
+       height: auto;
+       width: auto;
+       margin: auto;
+       margin-top: 60px;
+       margin-bottom: 50px;
+       border-radius: 10px;
+       padding: 40px;
+   }    
+   
+   .name{
+       right: 60px;
+       align-items: center;
+       display: grid;
+   }
+   
+   .city{
+       width: 70%
+   }
+   
+   .guess-option {
+       background-color: #00B8E6;
+       color: white;
+       border: double;
+       padding: 8px;
+       font-size: 20px;
+       display: block;
+       margin: 20px;
+       margin-bottom: 5px;
+       min-width: 120px;
+       box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+       cursor: pointer;
+   }
+
+   .restart {
+       background-color: #00B8E6;
+       color: white;
+       border: double;
+       padding: 8px;
+       font-size: 20px;
+       display: block;
+       margin: 20px;
+       margin-bottom: 5px;
+       min-width: 120px;
+       box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+       cursor: pointer;
+   }    
+    
+   }
+
+   @media only screen and (min-width: 320px) {
+
+    #check-dublin {
+        display: flex;
+        background-color: white;
+        height: auto;
+        width: auto;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        padding: 40px;
+    }
+    
+    #thankyou {
+        display: none;
+        background-color: black;
+        height: auto;
+        width: auto;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        padding: 40px;
+    }
+       
+    .name{
+        right: 60px;
+        align-items: center;
+        display: grid;
+    }
+    
+    .city{
+        width: 70%
+    }
+    
+    .guess-option {
+        background-color: #00B8E6;
+        color: white;
+        border: double;
+        padding: 8px;
+        font-size: 20px;
+        display: block;
+        margin: 20px;
+        margin-bottom: 5px;
+        min-width: 120px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+    
+    .restart {
+        background-color: #00B8E6;
+        color: white;
+        border: double;
+        padding: 8px;
+        font-size: 20px;
+        display: block;
+        margin: 20px;
+        margin-bottom: 5px;
+        min-width: 120px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+       
+}
